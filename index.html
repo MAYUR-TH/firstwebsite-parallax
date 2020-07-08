@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MT'S Cafe</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+		header{
+			width: 100vw;
+			background: url('images/cafe.jpg') no-repeat center center/cover;
+			height: 100vh;
+			color: white;
+		}
+		.row img{
+			height: 80px;
+			/* border: 2px solid green; */
+			border-radius: 50%;
+			background-color: white;
+			margin-top: 10px;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.main-nav{
+			display: flex;
+		}
+		.main-nav li{
+			list-style: none;
+			padding: 20px;
+		}
+		.main-nav li a{
+			text-decoration: none;
+			color: white;
+			font-size: 1.2rem;
+			font-weight: 100;
+			border: 2px solid white;
+			border-radius: 20px;
+			padding: 3px;
+		}
+		.main-nav li a:hover{
+			background-color: white;
+			color: black;
+		}
+		.main-content{
+			width: 100vw;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-45%, -50%);
+			/* border: 2px solid white; */
+		}
+		h1{
+			color: #fff;
+			font-size: 40px;
+			word-spacing: 5px;
+			letter-spacing: 3px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			text-shadow: 1px 1px 3px black;
+			font-weight: lighter;
+		}
+		.btn{
+			display: inline-block;
+			padding: 10px 30px;
+			font-weight: lighter;
+			text-decoration: none;
+			text-transform: uppercase;
+			border-radius: 200px;
+			transition: background-color 0.2s, border 0.2s, color 0.2s;
+		}
+		.btn-full{
+			/* background-color: transparent; */
+			color: #fff;
+			margin-right: 15px;
+			border: 1px solid white;
+		}
+		.btn-full:hover{
+			background-color: brown;
+			
+		}
+
+		.btn-nav{
+			background-color: transparent;
+			color: #fff;
+			border: 1px solid #fff;
+		}
+		.btn-nav:hover{
+			background-color:  brown;
+			/* color: black; */
+		}
+	</style>
+</head>
+<body>
+	<header id="header" class="">
+		<nav>
+			<div class="row">
+				<img src="images/logo.png" class="logo" alt="">
+				<ul class="main-nav">
+					<li><a href="#">CAKE DELIVERY</a></li>
+					<li><a href="#">HOW TO ORDER</a></li>
+					<li><a href="#">CHECK MORE</a></li>
+					<li><a href="#">SIGN UP</a></li>
+				</ul>			
+			</div>
+		</nav>
+		<div class="main-content">
+		<h1>WELCOME TO <span>MT'S CAFE</span>.<br>
+		HOUSE OF CAKE LOVER OO US.</h1>
+		<a href="#" class="btn btn-full">click to order</a>
+		<a href="#" class="btn btn-nav">show me more</a>
+	</div>
+	</header><!-- /header -->
+
+
+</body>
+</html>
